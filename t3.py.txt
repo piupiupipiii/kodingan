@@ -1,0 +1,75 @@
+import matplotlib.pyplot as plt
+
+
+def maxProfit(prices):
+    max_profit = 0
+    buy_day = 0
+    sell_day = 0
+
+    # Hitung harga paling tinggi
+    max_price = max(prices)
+
+    # Looping setiap harga
+    for idx, price in enumerate(prices):
+        # Jika bukan harga paling tinggi, next
+        if price != max_price:
+            continue
+
+        # List harga sebelum harga paling tinggi
+        previous_prices = prices[:idx]
+
+        # Hitung harga paling rendah sebelum harga paling tinggi,
+        # jika tidak ada, gunakan harga yang sama
+        low_price = min(previous_prices, default=price)
+        current_profit = max_price - low_price
+
+        if (max_profit >= current_profit):
+            continue
+
+        max_profit = current_profit
+        buy_day = idx
+
+        if len(previous_prices) > 0:
+            sell_day = previous_prices.index(low_price)
+        else:
+            sell_day = idx
+
+    # Plot harga saham
+    plt.figure(figsize=(10, 5))
+    plt.plot(prices, label="Harga", marker='o', linestyle='-')
+
+    # Sorot titik pembelian dan penjualan
+    plt.scatter([buy_day, sell_day], [prices[buy_day], prices[sell_day]], color='red', label='Beli / Jual')
+
+    plt.title("Grafik Harga Saham dan Titik Pembelian/Jualan")
+    plt.xlabel("Hari")
+    plt.ylabel("Harga")
+    plt.legend()
+    plt.grid()
+
+    plt.show()
+
+    return max_profit
+
+
+input_price = input("Masukkan harga saham: ")
+
+# Pisahkan setiap angka yang dimasukan dan simpan ke dalam array
+#
+# Contoh:
+#   Input: "123 123 123 123"
+#   Hasil: ["123", "123", "123", "123"]
+input_prices = input_price.split()
+
+# Rubah setiap string angka menjadi type integer dengan menggunakan fungsi map
+# dan konversi ke list
+#
+# Contoh:
+#  Sebelum: ["123", "123", "123", "123"]
+#  Sesudah: [123, 123, 123, 123]
+prices = list(map(int, input_prices))
+
+# Hitung maksimal profit dengan menggunakan function
+profit = maxProfit(prices)
+
+print("Keuntungan maksimum yang dapat bisa didapat adalah: ", profit)

@@ -1,0 +1,10 @@
+- User requirements analysis ( Analisis Kebutuhan Pengguna), harus menganalisa kebutuhan terhadap pengguna baik itu dalam cara penggunaan yang mudah maupun efisiensi terhadap sistem yang pengguna butuhkan.
+- User requirements specifications (Spesifikasi kebutuhan pengguna),  apa saja yang dibutuhkan pengguna dalam sistem yang sedang kita kembangkan.
+- Software requirements specifications (Spesifikasi persyaratan perangkat lunak), harus menyesuaikan software yang dibuat jika di lihat dari sisi pengguna. Jika pengguna merupakan awam atau bukan dari kalangan yang mengerti teknologi, tentunya harus menciptakan Software yang mudah digunakan.
+- Systems/broad design (logical design), sebelum pengimplementasi dalam bentuk coding, sistem yang akan dibuat/dikembangkan harus diimplementasikan dahulu dalam desain.
+- Program/detailed design (physical design), dalam tahap ini, membuat desain yang mendekati fisik atau secara detail.
+- Implementation/coding, setelah tahap desain barulah mengimplementasikannya dalam coding
+- Program testing: units, dalam tahap ini ditesting / cek kembali unit unit yang dibutuhkan dalam sistem yang sedang dikembangkan .
+- Program testing: system, dalam tahap ini test kembali sistem yang telah dibuat.
+- Program use, dalam tahap ini memberikan petunjuk bagaimana cara menggunakannya kepada pengguna.
+- Software maintenance, setelah sistem di pasang maka tentunya harus rutin mengupdate software / sistem yang telah dibuat agar terhindar dari kesalahan / bugs.

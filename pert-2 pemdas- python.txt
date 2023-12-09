@@ -1,0 +1,57 @@
+Microsoft Windows [Version 10.0.22621.2283]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Silvy Nur Azkia>python --version
+Python 3.10.11
+
+C:\Users\Silvy Nur Azkia>python
+Python 3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> a="Silvy Nur Azkia'
+  File "<stdin>", line 1
+    a="Silvy Nur Azkia'
+      ^
+SyntaxError: unterminated string literal (detected at line 1)
+>>> a="Silvy Nur Azkia"
+>>> print ("pipi")
+pipi
+>>> nama = "Silvy"
+>>> print (nama)
+Silvy
+>>> del (nama)
+>>> print (nama)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'nama' is not defined
+>>> usia = 19
+>>> type(usia)
+<class 'int'>
+>>>
+>>> alamat = "ciganitri"
+>>> type(alamat)
+<class 'str'>
+>>> tinggi = 148.5
+>>> type(tinggi)
+<class 'float'>
+>>> a = 10
+>>> b = 3
+>>> c = float(a)/float(b)
+>>> print(c)
+3.3333333333333335
+>>> a = float
+>>> b = float
+>>> c = 10(float)/3(float)
+<stdin>:1: SyntaxWarning: 'int' object is not callable; perhaps you missed a comma?
+<stdin>:1: SyntaxWarning: 'int' object is not callable; perhaps you missed a comma?
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'int' object is not callable
+>>> a = float
+>>> b = float
+>>> c = 10(float)/3(float)
+<stdin>:1: SyntaxWarning: 'int' object is not callable; perhaps you missed a comma?
+<stdin>:1: SyntaxWarning: 'int' object is not callable; perhaps you missed a comma?
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'int' object is not callable
+>>>
